@@ -5,6 +5,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 COPY . /app/
 WORKDIR /app/
-RUN git clone https://github.com/Miss-AFK/AnonXMusic AnonXMusic
-RUN cd AnonXMusic && pip3 install -U -r requirements.txt
-CMD cd AnonXMusic && python3 -m AnonXMusic
+RUN git clone https://github.com/anshulbot1/anshul anshul
+RUN cd anshul && pip3 install -U -r requirements.txt 
+CMD cd anshul && python3 -m AnonXMusic
